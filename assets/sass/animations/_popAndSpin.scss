@@ -1,0 +1,14 @@
+@keyframes popAndSpin{
+    0% {
+        transform: rotate(0deg) scale(0) translateX(-50%);
+        opacity: 0.1;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(180deg) scale(1)translateX(-50%);
+    }
+
+}

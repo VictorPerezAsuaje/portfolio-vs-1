@@ -1,0 +1,103 @@
+#studies{
+    display: grid;
+    grid-template-rows: auto;
+    
+    .study-items{
+        .study-grid{
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            width: 90%;
+            margin: 0 auto 2.5rem;
+            
+            .chronology{
+                position: relative;
+        
+                .vertical-line{
+                    min-height: 130px;
+                    width: 2px;
+                    position: absolute;
+                    top:0;
+                    left:4px;
+                    background-color: $color-purple;
+                }
+        
+                .dot{
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top:130px;
+                    left: 0;
+                    background-color: $color-purple;
+                }
+                
+                .horizontal-line{
+                    height: 2px;
+                    width: 100%;
+                    position: absolute;
+                    top:134px;
+                    left:0;
+                    background-color: $color-purple;
+                }
+            }
+        
+            .study-content{
+                display: grid;
+                grid-template-rows: 2fr 1fr;
+                gap: 1rem;
+                position: relative;
+                top: 106px;
+        
+                .study-title{
+                    width: 100%;
+                    border: 2px solid $color-purple;
+                    border-radius: 10px;
+                    padding: 1rem;
+                    text-align: center;
+                }
+                
+                .extra-data{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+        
+                    .certificate{
+                        display: none;
+        
+                        &.active{
+                            display: block;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            
+            @media (min-width: $large) {
+                width:70%;
+            }
+        }
+    }
+
+    .full-cv{
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .cv-btn{ 
+            text-decoration: none;
+            background-color: $color-purple;
+            color: $color-white;
+            border-radius:2rem;
+            padding: 1rem 2rem;
+            outline: none;
+            transition: .5s ease-in-out;
+
+            &:hover{
+                transform: scale(1.4,1.4);
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}

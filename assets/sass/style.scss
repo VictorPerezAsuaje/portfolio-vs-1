@@ -1,0 +1,31 @@
+// Resets
+
+@import 'base/colors';
+@import 'base/resets';
+@import 'base/breakpoints';
+
+// Animations
+
+@import 'animations/fadeEffect';
+@import 'animations/fadeInLeft';
+@import 'animations/popAndSpin';
+@import 'animations/popEffect';
+@import 'animations/spinEffect';
+@import 'animations/spinAndFloat';
+@import 'animations/floatDownEffect';
+@import 'animations/floatUpEffect';
+
+// Components
+
+@import 'components/card';
+@import 'components/shapes';
+
+// Layout
+
+@import 'layout/header';
+@import 'layout/profile';
+@import 'layout/skills';
+@import 'layout/portfolio';
+@import 'layout/studies';
+@import 'layout/contact';
+@import 'layout/footer';

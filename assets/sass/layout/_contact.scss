@@ -1,0 +1,40 @@
+#contact{
+    width: 90%;
+    margin: 2rem auto 0;
+
+    label{
+        width: 100%;
+        display: flex;
+        margin: 3rem 0 1rem;
+    }
+
+    input,
+    textarea
+    {
+        width: 100%;
+        border: 1px solid $color-purple;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .contact-button{
+        background: none;
+        outline: none;
+        border: 2px solid $color-purple;
+        color: $color-purple;
+        border-radius: 2rem;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        transition: 200ms ease-in-out;
+
+        &:hover{
+            border-color: transparent;
+            background-color: $color-purple;
+            color: $color-white;
+            transition: 200ms ease-in-out;
+        }
+
+    }
+
+
+}

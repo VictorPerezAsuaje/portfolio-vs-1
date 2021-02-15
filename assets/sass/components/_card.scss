@@ -1,0 +1,126 @@
+.card{
+    min-width: 250px;
+    min-height: 250px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+    align-items: center;
+    box-shadow: 5px 8px 10px 2px rgba(53, 9, 116, 0.2);;
+
+
+    .card-image{
+        object-fit: cover;
+        width:250px;
+        height: 250px;
+        margin: 2rem auto;
+    }
+
+    .card-content{
+        text-align: center;
+    }
+
+    .tag{
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+
+        .html,
+        .scss,
+        .css,
+        .js,
+        .jupyter,
+        .python{
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 24px;
+            padding: 0.2rem 0.75rem;
+        }
+
+        .html,
+        .jupyter{
+            color: $color-orange;
+            border-color: $color-orange;
+        }
+
+        .scss{
+            color: $color-pink;
+            border-color: $color-pink;
+        }
+
+        .css,
+        .python{
+            color: $color-blue;
+            border-color: $color-blue;
+        }
+
+        .js{
+            color: $color-yellow;
+            border-color: $color-yellow;
+        }
+    }
+
+    .card-links{
+        margin: 2rem auto 0;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        outline: none;
+
+        .github{
+            height: 40px;
+            width:40px;
+            background: none;
+            outline: none;
+
+            img.github-icon{
+                height: 40px;
+                width:40px;
+            }
+
+            &:hover{
+                img.github-icon{
+                    filter:invert(6%) sepia(80%) saturate(7424%) hue-rotate(269deg) brightness(88%) contrast(102%)
+                }
+            }
+        }
+
+        .live-demo{
+            text-decoration: none;
+            background: none;
+            border: 2px solid $color-black;
+            color: $color-black;
+            border-radius:2rem;
+            padding: 0.5rem 1rem;
+            outline: none;
+
+            &:hover{
+                border-color: transparent;
+                color: $color-white;
+                background-color: $color-black;
+            }
+        }
+    }
+
+    @media (min-width: $medium) {
+        grid-template-rows: 1fr;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        width:90%;
+
+        .card-title,
+        .description{
+            text-align: left;
+            padding-right: 1rem;
+        }
+
+        .tag{
+            justify-content: left;
+            p{
+                margin-right: 1rem;
+            }
+        }
+    }
+
+}

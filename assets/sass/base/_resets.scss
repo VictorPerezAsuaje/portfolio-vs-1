@@ -1,0 +1,39 @@
+html, *, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family:'Lato', sans-serif;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: $color-purple;
+}
+
+h1{
+    font-size: 1.4rem;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+h3{
+    font-size: 1.1rem;
+}
+
+hr{
+    width: 70%;
+    margin: auto;
+    height: 1px;
+    opacity: 0.2;
+    background-color: $color-black;
+}

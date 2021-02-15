@@ -1,0 +1,45 @@
+.background-decoration{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+
+    .pink-circle{
+        display:none;
+        height: 50px;
+        width: 50px;
+        opacity: 0.2;
+        position: absolute;
+        top:10vh;
+        left: 80vw;
+        transform-origin: center center;
+        animation: spinEffect 3s linear infinite;
+        border: 2px dotted $color-pink;
+        border-radius: 50%;
+    }
+    
+    .purple-triangle{
+        display:none;
+        height: 4vh;
+        width: 4vw;
+        opacity: 0.2;
+        position: absolute;
+        transform-origin: center center;
+        animation: popEffect 3s linear infinite;
+        filter: invert(19%) sepia(56%) saturate(2763%) hue-rotate(251deg) brightness(70%) contrast(122%);
+    }
+    
+    .orange-square{
+        overflow-x: hidden;
+        display:none;
+        height: 50px;
+        width: 50px;
+        opacity: 0.2;
+        position: absolute;
+        top:10vh;
+        left: 80vw;
+        transform-origin: center center;
+        animation: popAndSpin 3s linear infinite;
+        border: 2px solid $color-orange;
+        border-radius: 16px;
+    }
+}

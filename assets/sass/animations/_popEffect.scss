@@ -1,0 +1,18 @@
+@keyframes popEffect {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    30%{
+        transform: scale(0.1) rotate(1deg);
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.3;
+        transform: scale(0.7) rotate(15deg);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1) rotate(20deg);
+    }
+}
