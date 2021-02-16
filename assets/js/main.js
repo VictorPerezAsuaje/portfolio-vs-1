@@ -19,9 +19,14 @@ menuArrow.addEventListener("click", () =>{
 
 /*--- Background generator ---*/
 
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 const purpleTriangle = document.querySelectorAll('.purple-triangle');
 const pinkCircle = document.querySelectorAll('.pink-circle');
 const orangeSquare = document.querySelectorAll('.orange-square');
+console.log(vw);
+console.log(vh);
+
 
 // Set new position for objects
 function SetPosition(object, positionTop, positionLeft){
@@ -55,6 +60,10 @@ function ChangeObjectProperties() {
         top = Math.floor(Math.random() * 400);
         left = Math.floor(Math.random() * 65);
         size = Math.floor(Math.random()*4+1);
+        if(vw <= 425){
+            left -= 5;
+            size --;
+        }
         SetPosition(purpleTriangle[i], top, left);
         SetNonMutableSize(purpleTriangle[i],size);
     }
@@ -62,8 +71,12 @@ function ChangeObjectProperties() {
     for(i=0; i<pinkCircle.length; i++){
         pinkCircle[i].style.display = "flex";
         top = Math.floor(Math.random() * 400);
-        left = Math.floor(Math.random() * 70);
+        left = Math.floor(Math.random() * 65);
         size = Math.floor(Math.random()*100);
+        if(vw <= 425){
+            left -= 5;
+            size --;
+        }
         SetPosition(pinkCircle[i], top, left);
         SetMutableSize(pinkCircle[i], size);
         ChangeBorder(pinkCircle[i]);
@@ -72,8 +85,12 @@ function ChangeObjectProperties() {
     for(i=0; i<orangeSquare.length; i++){
         orangeSquare[i].style.display = "flex";
         top = Math.floor(Math.random() * 400);
-        left = Math.floor(Math.random() * 70);
+        left = Math.floor(Math.random() * 65);
         size = Math.floor(Math.random()*100);
+        if(vw <= 425){
+            left -= 5;
+            size --;
+        }
         SetPosition(orangeSquare[i], top, left);
         SetMutableSize(orangeSquare[i], size);
         ChangeBorder(orangeSquare[i]);
