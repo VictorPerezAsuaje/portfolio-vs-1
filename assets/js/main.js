@@ -24,8 +24,6 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 const purpleTriangle = document.querySelectorAll('.purple-triangle');
 const pinkCircle = document.querySelectorAll('.pink-circle');
 const orangeSquare = document.querySelectorAll('.orange-square');
-console.log(vw);
-console.log(vh);
 
 
 // Set new position for objects
